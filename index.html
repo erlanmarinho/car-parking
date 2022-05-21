@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <title>Estacionamento</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="wrapper">
+        <div class="logo">
+          <img src="./assets/img/car.png" alt="logo do sistema" />
+          <h1 class="car">Car<span class="parking">Parking</span></h1>
+        </div>
+        <section>
+        <div class="veiculo">
+          <form acton="">
+            <fieldset class="field">
+              <legend>Cadastrar Veículo</legend>
+              <label for="cliente">Cliente</label><br />
+              <input
+                id="cliente"
+                type="text"
+                name="cliente"
+                placeholder="Digite o nome do cliente "
+              />
+              <br /><br />
+
+              <label for="veiculo">Veículo</label><br />
+              <input
+                id="veiculo"
+                type="text"
+                name="veiculo"
+                placeholder="Digite o nome do veículo "
+              />
+              <br /><br />
+
+              <label for="placa">Placa</label><br />
+              <input
+                id="placa"
+                type="text"
+                name="placa"
+                placeholder="Digite a placa do veículo "
+              />
+              <br /><br />
+
+              <button class="button" id="cadastrar" alt="Botão excluir">Cadastrar</button>
+            </fieldset>
+          </form>
+        </div>
+      </section>
+      </div>
+    
+<section>
+      <div class="tabela">
+        <table>
+          <thead>
+            <tr class="cabecalho">
+              <th>Cliente</th>
+              <th>Carro</th>
+              <th>Placa</th>
+              <th>Entrada</th>
+              <th>Ações</th>
+            </tr>
+          </thead>
+          <tbody id="patio"></tbody>
+        </table>
+      </div>
+    </div>
+
+  </section>
+
+    <!--<footer>
+      <div class="flex-container footer">
+        <p>&copy; 2022 CarParking</p>
+        <p>Desenvolvido por - Erlan Marinho</p>
+      </div>
+    </footer>-->
+
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>

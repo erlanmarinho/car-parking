@@ -1,0 +1,246 @@
+/*=== GERAL =============================*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: hsl(0, 65%, 48%);
+  --headline: hsl(210, 11%, 15%);
+
+  --brand-car: hsl(170, 100%, 26%);
+  --brand-light: hsl(0, 100%, 95%);
+
+  --brand-dark: hsl(0, 72%, 30%);
+  --input: hsl(0, 3%, 60%);
+
+  font-size: 62.5%; /* 1rem = 10px */
+
+  --nav-height: 7.2rem;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+
+  height: 100vh;
+
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.6rem;
+  overflow: overlay;
+
+  background-color: var(--brand-light);
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 50%;
+
+  margin-top: 1rem;
+
+  margin-left: 2rem;
+  margin-right: 5rem;
+}
+
+/*=== LOGO =============================*/
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+
+  margin-left: 2.4rem;
+
+  height: 3.9rem;
+  width: 30rem;
+}
+
+.logo .car {
+  color: var(--brand-car);
+}
+
+.logo span {
+  color: var(--brand-dark);
+}
+
+/*=== CADASTRAR VEÍCULO =============================*/
+.veiculo {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 40%;
+
+  margin-left: 5rem;
+}
+
+.field {
+  padding: 2rem;
+
+  font-size: 2rem;
+}
+
+fieldset input {
+  font-size: 2rem;
+  padding: 1rem;
+  background-color: var(--brand-light);
+
+  border-radius: 0.4rem;
+  border: 1px solid var(--input);
+}
+
+.button {
+  background-color: var(--primary-color);
+
+  border: none;
+  border-radius: 4rem;
+
+  margin-bottom: 1rem;
+
+  padding: 1rem 2rem;
+  width: fit-content;
+
+  color: white;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  font-weight: 700;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.6rem;
+
+  text-decoration: none;
+
+  transition: background 200ms;
+}
+
+.button:hover {
+  background-color: var(--brand-dark);
+
+  color: white;
+  transition: background 700ms;
+}
+
+/*=== TABELA =============================*/
+
+.tabela {
+  display: flex;
+  flex-direction: column;
+ 
+
+  margin-top: 10rem;
+
+  margin-left: 10rem;
+  margin-right: 5rem;
+}
+
+.tabela thead th {
+  padding: 1rem;
+  text-align: left;
+  background-color: var(--primary-color);
+  color: white;
+}
+tr:nth-child(even) /* CSS3 */ {
+  background: #d4d0d0;
+}
+
+tbody td {
+  padding: 0.5rem 1rem;
+}
+
+tbody td button {
+  background-color: transparent;
+
+
+  border: none;
+  border-radius: 1rem;
+  padding: 0.3rem 2rem;
+
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  font-weight: 700;
+  display: flex;
+  margin-left: 1.3rem;
+
+  cursor: pointer;
+
+  transition: background 200ms;
+}
+
+tbody td button:hover {
+  background-color: transparent;
+  border: 1px solid #e74c3c;
+  color: var(--primary-color);
+  transition: background 700ms;
+}
+
+/*=== TABELA =============================*/
+footer div {
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+
+  padding: 1.6rem;
+	bottom: 0;
+
+	text-align: center;
+	font-weight: 400;
+  width: 100%;
+
+  background-color: var(--primary-color);
+  padding-block: 1rem;
+
+  color: white;
+}
+
+.footer {
+  justify-content: space-between;
+  padding-left: 25rem;
+  padding-right: 25rem;
+}
+
+/* mobile */
+@media(max-width: 650px) {
+
+  
+
+  body .container {
+    flex-direction: column;
+    align-items: center;
+   
+    margin-left: 0rem;
+    margin-right: 5px;
+    width: 100%;
+    
+  }
+
+  section {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  } 
+
+}
